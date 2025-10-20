@@ -671,9 +671,15 @@
             width: 100%;
         }
     </style>
-    <audio autoplay loop style="display:none;">
-  <source src="/audio.mp3" type="audio/mpeg">
+    <audio id="bg-music" loop>
+  <source src="audio.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  document.addEventListener('click', () => {
+    document.getElementById('bg-music').play();
+  });
+</script>
 
 </head>
 
